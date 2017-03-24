@@ -1,0 +1,48 @@
+body{
+	font-size: 1.2em;
+}
+
+#settings,footer{
+    border: 2px solid grey;
+    background-color: lightgray;
+    width: 450px;
+	padding: 6px;
+}
+
+footer{
+	min-height: 50px;
+}
+
+footer *{
+	margin: 0;
+	padding-bottom: 1.2em;
+}
+
+#result{
+    font-weight: bold;
+}
+
+#settings label{
+    display: inline;
+}
+
+button:enabled{
+	/*css defaults*/
+	color: buttontext;
+    background-color: buttonface;
+}
+
+select:enabled{
+	/*css defaults*/
+	color: black;
+    background-color: white;
+}
+
+#settings select:disabled,button:disabled{
+	background-color: gray;
+	color: darkgrey;
+}
+
+#clear,#reset{
+	float: right;
+}

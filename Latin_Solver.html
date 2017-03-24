@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Latin Square Solver</title>
+        
+        <link href="Latin_Solver.css" type="text/css" rel="stylesheet" />
+        
+        <!--I am Buckets-JS so I don't have to write my own priority queue. See their GitHub page at https://github.com/mauriciosantos/Buckets-JS.-->
+        <script src="buckets.min.js"></script>
+        
+        <script src="Latin_Solver.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="settings">
+            <h1>Latin Square Solver</h1>
+            <label>Size:
+                <select id="sizeSelector">
+                    <option value=2>2x2</option>
+                    <option value=3>3x3</option>
+                    <option value=4 selected>4x4</option>
+                </select>
+            </label>
+            <label>Range:
+                <select id="rangeSelector">
+                    <option value=1>A-A</option>
+                    <option value=2>A-B</option>
+                    <option value=3 selected>A-C</option>
+                    <option value=4>A-D</option>
+                </select>
+            </label>
+			<button id="solve">Solve</button>
+			<button id="reset">Reset</button>
+            <button id="clear">Clear</button>
+        </div>
+        
+        <canvas id="canvas" width="460" height="460">
+            <p>This browser cannot display canvas.</p>
+        </canvas>
+		
+		<footer>
+            <p>Use the dropdown menus to change the size (resizing erases the grid) and letter range. Click on the cells and use the keyboard to edit the starting puzzle. Click solve when you are ready.</p>
+            <p>Result: <span id="result">N/A</span></p>
+		</footer>
+    </body>
+</html>
